@@ -25,7 +25,7 @@ typedef struct {
 /** A group element of the secp256k1 curve, in jacobian coordinates.
  *  Note: For exhastive test mode, secp256k1 is replaced by a small subgroup of a different curve.
  */
-typedef struct secp256k1_gej {
+typedef struct {
     secp256k1_fe x; /* actual X: x/z^2 */
     secp256k1_fe y; /* actual Y: y/z^3 */
     secp256k1_fe z;
